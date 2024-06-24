@@ -1,0 +1,330 @@
+{
+  "metainfo" : {
+    "migrationVersions" : {
+      "gemBuilderVersion" : "v1"
+    },
+    "functions" : { },
+    "codeGenConfiguration" : {
+      "editableConfig" : true,
+      "plibVersion" : {
+        "mavenVersion" : "8.0.16",
+        "pyPiVersion" : "1.9.5"
+      }
+    },
+    "id" : "1",
+    "uri" : "pipelines/Automation_localcommit_python_Pipeline",
+    "pipelineSettingsInfo" : {
+      "applicationName" : "Automation_localcommit_python_Pipeline",
+      "hasApplication" : true,
+      "isFunctionsPackageDirDefined" : true
+    },
+    "language" : "python",
+    "fabricId" : "1",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ],
+      "functionPackageName" : "abhishekse2etestsprophecyioteam.automationlocalcommitpython.functions",
+      "sharedFunctionPackageNames" : [ "prophecy.spark_basic.functions", "prophecy.webapp.functions", "abhishekse2etestsprophecyioteam.pythonproject.functions", "prophecy.warehouse.functions", "prophecy.streaming.functions", "prophecy.spark_abi.functions" ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ {
+          "name" : "c_array",
+          "kind" : {
+            "type" : "array",
+            "elementType" : {
+              "type" : "long",
+              "value" : null
+            },
+            "value" : [ 10, 20, 100, -10, 0, 20 ]
+          },
+          "optional" : false,
+          "isWorkflowNodeConfiguration" : false,
+          "isReferenced" : false
+        }, {
+          "name" : "c_int_basic",
+          "kind" : {
+            "type" : "int",
+            "value" : -65530
+          },
+          "optional" : false,
+          "isWorkflowNodeConfiguration" : false,
+          "isReferenced" : false
+        }, {
+          "name" : "c_record",
+          "kind" : {
+            "type" : "record",
+            "fields" : [ {
+              "name" : "c_string",
+              "kind" : {
+                "type" : "string",
+                "value" : "this is my123string sama"
+              },
+              "optional" : false,
+              "isWorkflowNodeConfiguration" : false,
+              "isReferenced" : false
+            }, {
+              "name" : "c_boolean",
+              "kind" : {
+                "type" : "boolean",
+                "value" : false
+              },
+              "optional" : false,
+              "isWorkflowNodeConfiguration" : false,
+              "isReferenced" : false
+            }, {
+              "name" : "c_float",
+              "kind" : {
+                "type" : "float",
+                "value" : -23.34
+              },
+              "optional" : false,
+              "isWorkflowNodeConfiguration" : false,
+              "isReferenced" : false
+            } ]
+          },
+          "optional" : false,
+          "isWorkflowNodeConfiguration" : false,
+          "isReferenced" : false
+        } ]
+      },
+      "oldCommon" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : { },
+      "instances" : { },
+      "selected" : "test-instance1-main-one",
+      "nonEditable" : [ ],
+      "isSubscribedPipelineWithPipelineConfigs" : false
+    },
+    "sparkConf" : [ ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ],
+    "dependentProjectExternalDependencies" : [ {
+      "projectUID" : "6",
+      "projectName" : "ProphecySparkBasicsPython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "9",
+      "projectName" : "ProphecyWebAppPython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "15936",
+      "projectName" : "python_project",
+      "externalDependencies" : [ {
+        "type" : "plibMaven",
+        "modifiedAt" : "2024-05-17T05:18:38.306321Z",
+        "name" : "plibMaven",
+        "version" : "7.1.97",
+        "id" : "1387270530",
+        "createdAt" : "2024-05-17T05:18:38.306321Z"
+      }, {
+        "type" : "plibPypi",
+        "modifiedAt" : "2024-05-17T05:18:38.306321Z",
+        "name" : "plibPypi",
+        "version" : "1.8.19",
+        "id" : "1879047086",
+        "createdAt" : "2024-05-17T05:18:38.306321Z"
+      } ]
+    }, {
+      "projectUID" : "1404",
+      "projectName" : "ProphecyWarehousePython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "8",
+      "projectName" : "ProphecyStreamingPython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "1212",
+      "projectName" : "ProphecySparkAbinitioPython",
+      "externalDependencies" : [ ]
+    } ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : true,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : false,
+      "value" : 1000
+    },
+    "topLevelPackage" : "automation_localcommit_python_pipeline",
+    "configurationVersion" : "v2"
+  },
+  "connections" : [ {
+    "id" : "x6GBQ__aZpHwRaVmgr8MB",
+    "source" : "rbRq8if9fwnIC-n2D3Yc_$$nbzq9u8tZL6AecuoEW5dK",
+    "sourcePort" : "f738-HvLEo5XnkEab_29e$$yeNKyz0zL8GzdH85evqLg",
+    "target" : "lePEEzOJGtEwLzBD-mbh2$$-5cr0XhXoxuKIEYrBTZwW",
+    "targetPort" : "IMkxmIUELHmtkscEkZnm8$$c73GbJ308omLuEkcHqKiS"
+  } ],
+  "processes" : {
+    "rbRq8if9fwnIC-n2D3Yc_$$nbzq9u8tZL6AecuoEW5dK" : {
+      "id" : "rbRq8if9fwnIC-n2D3Yc_$$nbzq9u8tZL6AecuoEW5dK",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "test_dataset",
+        "slug" : "test_dataset",
+        "x" : 20,
+        "y" : 20,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "f738-HvLEo5XnkEab_29e$$yeNKyz0zL8GzdH85evqLg",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/test_dataset"
+      }
+    },
+    "lePEEzOJGtEwLzBD-mbh2$$-5cr0XhXoxuKIEYrBTZwW" : {
+      "id" : "lePEEzOJGtEwLzBD-mbh2$$-5cr0XhXoxuKIEYrBTZwW",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "format_config_column",
+        "slug" : "format_config_column",
+        "x" : 220,
+        "y" : 20,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false,
+        "comment" : "Formats a configuration column by concatenating different values from the input DataFrame.",
+        "autoUpdateComment" : true
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "IMkxmIUELHmtkscEkZnm8$$c73GbJ308omLuEkcHqKiS",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "customer_id",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "first_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "last_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "phone",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "email",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "country_code",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "account_open_date",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "account_flags",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ {
+          "id" : "uwo9_MtalpnhNvWvKCaGh$$BJz7p0BzXZFgwTVptLO9A",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "importLanguage" : "${$.workflow.metainfo.frontEndLanguage}",
+        "expressions" : [ {
+          "target" : "c_config_col",
+          "expression" : {
+            "format" : "sql",
+            "expression" : "concat('$c_int_basic', '$c_record.c_string', '$c_array[0]')"
+          },
+          "description" : ""
+        } ],
+        "importString" : "",
+        "activeTab" : "expressions",
+        "columnsSelector" : [ ]
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/P4JOEwcf_team_5/P4JOEwcf_project_6.git&subPath=&tag=0.2.25&projectSubscriptionProjectId=6&path=gems/Reformat",
+        "projectName" : "ProphecySparkBasicsPython"
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false,
+    "autoUpdateOnRun" : false
+  }
+}
