@@ -13,7 +13,7 @@ from prophecy.cb.server.base import WorkflowContext
 class Reformat(ComponentSpec):
     name: str = "Test_Release_Trigger_Gem"
     category: str = "Custom"
-    gemDescription: str = "Edits column names or values using expressions."
+    gemDescription: str = "Edited Description for release trigger testing"
     docUrl: str = "https://docs.prophecy.io/low-code-spark/gems/transform/reformat/"
 
 
