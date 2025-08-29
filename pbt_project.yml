@@ -1,6 +1,6 @@
 name: Project-Automation_python_RELEASE_API_1756470888095
 description: test random description
-version: 0.0.1
+version: 1.0.0
 author: abhisheks+e2etests@prophecy.io
 language: python
 buildSystem: ''
