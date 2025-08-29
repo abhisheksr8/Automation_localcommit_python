@@ -1,0 +1,3 @@
+from pipelineautomation_release_api_1756470888095.pipeline import main
+
+main()
