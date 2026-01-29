@@ -1,0 +1,150 @@
+name: Project-Automation_python_RELEASE_API_1769693672668
+description: test random description
+version: 0.0.1
+author: abhisheks+e2etests@prophecy.io
+language: python
+buildSystem: ''
+buildSystemDetails:
+  artefactID: projectautomationpythonreleaseapi1769693672668
+  parentArtefactID: abhishekse2etestsprophecyioteam
+  buildSystem: wheel
+  author: null
+  createdAt: '2026-01-29 13:35:52'
+pipelines:
+  pipelines/Pipeline-Automation_RELEASE_API_1769693672668:
+    name: Pipeline-Automation_RELEASE_API_1769693672668
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2026-01-29 13:38:35'
+    datasets:
+      inputs:
+      - datasets/Project-Automation_python_RELEASE_API_1769693672668_dataSet
+      outputs: []
+    subgraphs: []
+    dependencies: {}
+datasets:
+  datasets/Project-Automation_python_RELEASE_API_1769693672668_dataSet:
+    name: Project-Automation_python_RELEASE_API_1769693672668_dataSet
+    description: ''
+    author: abhisheks+e2etests@prophecy.io
+    createdAt: '2026-01-29 13:42:37'
+    mode: batch
+    physicalDatasets:
+      dev:
+        fabricId: 3
+        datasetType: File
+        description: ''
+        author: abhisheks+e2etests@prophecy.io
+        createdAt: '2026-01-29 13:42:37'
+templates: {}
+jobs:
+  jobs/Project-Automation_python_RELEASE_API_1769693672668_RELEASE_API_JOB:
+    name: Project-Automation_python_RELEASE_API_1769693672668_RELEASE_API_JOB
+    description: ''
+    fabricUID: 3
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: small
+    scheduleCron: 0/1 * * ? * * 2090
+    timeout: null
+    alerting:
+      emails: abhisheks+e2etests@prophecy.io
+      onStart: true
+      onSuccess: true
+      onFailure: true
+    pipelines:
+    - pipelines/Pipeline-Automation_RELEASE_API_1769693672668
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2026-01-29 13:43:39'
+    author: abhisheks+e2etests@prophecy.io
+    models: []
+    sqlProjects: []
+gemContainer:
+  languageVersion: '3.10'
+  gemLibsVersion: 1.3.4.0
+  gems:
+    gems/Test_Release_Trigger_Gem:
+      name: Test_Release_Trigger_Gem
+      category: Custom
+      subCategory: ''
+      description: null
+      author: abhisheks+e2etests@prophecy.io
+      mode: batch
+      files:
+      - abhishekse2etestsprophecyioteam_projectautomationpythonreleaseapi1769693672668/gems/Test_Release_Trigger_Gem.py
+      gemType: ComponentGem
+      dependencies: []
+      createdAt: '2026-01-29 13:40:11'
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2026-01-29 13:35:52'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels: {}
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros: {}
+sqlSeeds: {}
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlPipeline: null
+dependencies:
+- modifiedAt: '2026-01-29T13:35:52.059581Z'
+  name: plibMaven
+  version: 9.0.0-SNAPSHOT
+  createdAt: '2026-01-29T13:35:52.059581Z'
+  type: plibMaven
+  enabled: true
+  entity: Project
+- modifiedAt: '2026-01-29T13:36:46.259Z'
+  name: ProphecyLibsPython
+  version: 2.1.10
+  createdAt: '2026-01-29T13:35:52.059581Z'
+  type: plibPypi
+  enabled: true
+  entity: Project
+  description: Default dependency for Prophecy Libs
+  scope: Project
+  editable: true
+projectDependencies:
+  '5':
+    projectUID: 5
+    projectName: ProphecyWarehousePython
+    repositoryPath: gitUri=http://gitserver:3000/RgJINbmJ_team_2/RgJINbmJ_project_5.git&subPath=
+    version: 0.0.10
+    isDefault: true
+    author: null
+    createdAt: '2026-01-29 13:35:30'
+  '14':
+    projectUID: 14
+    projectName: python_project
+    repositoryPath: gitUri=http://gitserver:3000/9WvkdHgQ_team_5/DaaYYyCq_project_14.git&subPath=
+    version: python_project/v1.1
+    isDefault: false
+    author: null
+    createdAt: '2026-01-29 13:35:30'
+  '4':
+    projectUID: 4
+    projectName: ProphecySparkBasicsPython
+    repositoryPath: gitUri=http://gitserver:3000/RgJINbmJ_team_2/RgJINbmJ_project_4.git&subPath=
+    version: 0.2.55.dev0
+    isDefault: true
+    author: null
+    createdAt: '2026-01-29 13:35:30'
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}
+projectConfigurations: {}
